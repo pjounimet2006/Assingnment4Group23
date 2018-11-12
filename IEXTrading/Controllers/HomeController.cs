@@ -51,7 +51,7 @@ namespace MVCTemplate.Controllers
 
                     Stat temp = new Stat();
 
-                    if (!StatList.Exists(o => 
+                    if (!StatList.Exists(o => o.symbol.Equals(fin.symbol)))
                     {
 
                         if (fin.currentDebt != 0)
